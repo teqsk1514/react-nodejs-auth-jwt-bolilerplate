@@ -20,9 +20,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const db = require("./config/keys").MONGO_URI;
 
 // checking the routes
-app.get("/", (req, res, next) => {
-  res.json({ msg: "Hello" });
-});
+// app.get("/", (req, res, next) => {
+//   res.json({ msg: "Hello" });
+// });
 
 // passport middleware
 app.use(passport.initialize());
